@@ -1,0 +1,23 @@
+Think of a shared cell phone plan. Many people share a limited resource, with the phone company holding its breath waiting for anyone to go over the monthly caps of voice minutes, texts, or data. This is a Python module that helps maximize utilization while preventing overages. It coaches each user about whether to reduce or increase usage to fit into the monthly quota.
+
+For now, only Verizon Wireless accounts are supported.  My goal is to eventually support all major carriers.
+
+This library is designed for (casual?) programmers.  It's not usable right out of the box, but needs some integration with your account info and your usage/sharing scenario.
+
+This library was tested with Python 3.2.
+
+The demo program which does not download any real data::
+
+    $ ./demo.py
+
+The unit test suite::
+
+    $ ./test-sua.py
+
+The documentation::
+
+    $ python
+    >>> import SharedUsageAlerter
+    >>> help(SharedUsageAlerter)
+
+Finally, `vz-alerter.py` is a program that retrieves Verizon data of an account and determines alerts.
